@@ -162,7 +162,8 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   font-weight: 500;
-  margin-block: 16px;
+  margin-block: 70px;
+  margin-bottom: 120px;
 }
 
 #certification-intro {
@@ -313,6 +314,7 @@ h2 {
 
 .steps-top {
   display: flex;
+  margin-bottom: 80px;
 }
 
 .steps-bottom {
@@ -321,4 +323,113 @@ h2 {
 
 .step {
   width: 33%;
+  padding: 1rem;
+  position: relative;
+}
+
+.step h3 {
+  font-size: 128px;
+  font-weight: 600;
+  position: absolute;
+  top: -4.2rem;
+}
+
+.step-desc {
+  background-color: grey;
+  height: 334px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  padding: 41px;
+}
+
+.step-desc h4 {
+  font-size: 24;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.step-desc p {
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 28px;
+}
+
+.step-desc p {
+  margin-top: 10px;
+}
+
+#certification-procedure
+  > div.steps-top
+  > div:nth-child(2)
+  > div
+  > p
+  > span
+  > a {
+  color: #ec7824;
+  text-decoration: none;
+}
+
+#certification-procedure > div > div > div > a {
+  position: absolute;
+  bottom: 41px;
+  right: 41px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+#cert-cta {
+  background-image: url(./assets/images/cert-cta-bg.png);
+  color: #1b1b1f;
+  margin-left: calc(-1 * 70px); /* Negative of body padding */
+  margin-right: calc(-1 * 70px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 46px;
+}
+
+#cert-cta > h2 {
+  margin: auto;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+#cert-cta > p {
+  font-size: 18px;
+  line-height: 28px;
+  width: 640px;
+  margin-top: 7px;
+}
+
+.cert-cta-btns {
+  display: flex;
+  margin-top: 33px;
+  align-items: center;
+}
+
+.cert-cta-btns-left button {
+  background-color: #1b1b1f;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 10px 25px;
+  border-radius: 9.6px;
+  border: none;
+  margin-right: 30px;
+}
+
+.cert-cta-btns-right {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
