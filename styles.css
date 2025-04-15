@@ -163,7 +163,6 @@ h2 {
   line-height: 48px;
   font-weight: 500;
   margin-block: 70px;
-  margin-bottom: 120px;
 }
 
 #certification-intro {
@@ -183,6 +182,11 @@ h2 {
   font-weight: 900;
   line-height: 72px;
   margin-top: 66px;
+}
+
+#certification-structure > h2,
+#core-categories > h2 {
+  margin-bottom: 16px;
 }
 
 #certification-structure p {
@@ -403,6 +407,12 @@ h2 {
   line-height: 48px;
 }
 
+.step-desc h4 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
 #cert-cta > p {
   font-size: 18px;
   line-height: 28px;
@@ -432,4 +442,58 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: left;
+  font-size: 16px;
+  font-weight: 200;
+  gap: 0.2rem;
+}
+
+.cert-cta-btns-right a {
+  text-decoration: none;
+  color: #ec7824;
+  font-weight: 600;
+}
+
+.cert-vals-card-container {
+  display: flex;
+  gap: 20px;
+  min-height: 244px;
+}
+
+.cert-vals-card {
+  width: 33%;
+  padding: 46px 41px;
+  max-width: 420px;
+  border-radius: 9.6px;
+  height: 244px;
+
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+}
+
+.cert-vals-card-container h4 {
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.cert-vals-card-container p {
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 200;
+}
+
+#cert-vals > h2 {
+  margin-bottom: 46px;
+}
+
+footer {
+  border: 1px solid white;
+  text-align: center;
+  margin-top: 110px;
+  width: 100%;
 }
