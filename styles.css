@@ -1,0 +1,324 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  background-color: #1b1b1f;
+  color: #fff;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+p {
+  font-size: 18px;
+}
+
+nav {
+  border: 1px solid #e5e5e5;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 64px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 500;
+  margin-block: 16px;
+}
+
+#certification-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 95px;
+}
+
+#certification-intro p {
+  line-height: 48px;
+  width: 860px;
+}
+
+#certification-h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 72px;
+  margin-top: 66px;
+}
+
+#certification-structure p {
+  width: 1300px;
+  line-height: 48px;
+  margin-top: 16.42px;
+}
+
+#certification-structure ul li {
+  margin-block: 2rem;
+}
+
+#level-container {
+  display: flex;
+  justify-content: center;
+  margin-block: 70px;
+  gap: 190px;
+}
+
+#proficiency-level {
+  margin-top: 70px;
+}
+
+.level {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.level img {
+  width: 124px;
+}
+
+.level p {
+  width: 248px;
+}
+
+.level-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  margin: 0 auto;
+}
+
+#core-categories {
+  margin: 0 auto;
+  width: 1260px;
+}
+
+.category {
+  width: 420px;
+  height: 420px;
+  border-radius: 9.6px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  background-size: cover;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.core-categories-top-container {
+  margin-bottom: 20px;
+}
+
+.core-categories-top-container,
+.core-categories-bottom-container {
+  display: flex;
+  gap: 20px;
+}
+
+.category img {
+  width: 77px;
+  margin: 0 auto;
+  z-index: 20;
+}
+
+.category p {
+  z-index: 20;
+}
+
+.category img,
+.category p {
+  pointer-events: none;
+}
+
+.category-dark-overlay {
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  width: 420px;
+  height: 420px;
+  border-radius: 9.6px;
+  opacity: 0.3;
+}
+
+.category-dark-overlay:hover {
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+
+.core-categories-top-container > .category:nth-child(1) {
+  background-image: url(./assets/images/soda_girl.jpg);
+}
+
+.core-categories-top-container > .category:nth-child(2) {
+  background-image: url(./assets/images/pig.png);
+}
+
+.core-categories-top-container > .category:nth-child(3) {
+  background-image: url(./assets/images/sculpting.jpg);
+}
+
+.core-categories-bottom-container > .category:nth-child(1) {
+  background-image: url(./assets/images/rigging.jpg);
+}
+
+.core-categories-bottom-container > .category:nth-child(2) {
+  background-image: url(./assets/images/shade.jpg);
+}
+
+.core-categories-bottom-container > .category:nth-child(3) {
+  background-image: url(./assets/images/mansion.jpg);
+}
+
+.steps-top {
+  display: flex;
+}
+
+.steps-bottom {
+  display: flex;
+}
+
+.step {
+  width: 33%;
+}
